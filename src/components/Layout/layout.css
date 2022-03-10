@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'PacFont';
-  src: url('../../fonts/PAC-FONT.ttf') format('truetype');
+  src: local('PacFont'), url('../../fonts/PAC-FONT.ttf') format('truetype');
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Press Start';
-  src: url('../../fonts/PressStart.ttf') format('truetype');
+  src: local('Press Start'), url('../../fonts/PressStart.ttf') format('truetype');
   font-display: swap;
 }
 
