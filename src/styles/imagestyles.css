@@ -1,0 +1,43 @@
+.imageWrapper {
+  max-height: 160px;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+  transition: top 0.3s, left 0.3s, box-shadow 0.3s;
+}
+
+.imageWrapper:hover {
+  top: -0.5rem;
+  left: -0.5rem;
+}
+
+.starWarsPhotoWrapper:hover {
+  box-shadow: 5px 5px rgba(57, 65, 190, 0.4), 10px 10px rgba(57, 65, 190, 0.3),
+    15px 15px rgba(57, 65, 190, 0.2), 20px 20px rgba(57, 65, 190, 0.1),
+    25px 25px rgba(57, 65, 190, 0.05);
+}
+.bigBangTheoryWrapper:hover {
+  box-shadow: 5px 5px rgba(243, 122, 54, 0.4), 10px 10px rgba(243, 122, 54, 0.3),
+    15px 15px rgba(243, 122, 54, 0.2), 20px 20px rgba(243, 122, 54, 0.1),
+    25px 25px rgba(243, 122, 54, 0.05);
+}
+.ojMatApiWrapper:hover {
+  box-shadow: 5px 5px rgba(220, 216, 215, 0.4), 10px 10px rgba(220, 216, 215, 0.3),
+    15px 15px rgba(220, 216, 215, 0.2), 20px 20px rgba(220, 216, 215, 0.1),
+    25px 25px rgba(220, 216, 215, 0.05);
+}
+.ipTrackerWrapper:hover {
+  box-shadow: 5px 5px rgba(0, 122, 135, 0.4), 10px 10px rgba(0, 122, 135, 0.3),
+    15px 15px rgba(0, 122, 135, 0.2), 20px 20px rgba(0, 122, 135, 0.1),
+    25px 25px rgba(0, 122, 135, 0.05);
+}
+.spaceTourismWebsiteWrapper:hover {
+  box-shadow: 5px 5px rgba(91, 95, 96, 0.4), 10px 10px rgba(91, 95, 96, 0.3),
+    15px 15px rgba(91, 95, 96, 0.2), 20px 20px rgba(91, 95, 96, 0.1),
+    25px 25px rgba(91, 95, 96, 0.05);
+}
+.housesForSaleWrapper:hover {
+  box-shadow: 5px 5px rgba(155, 175, 218, 0.4), 10px 10px rgba(155, 175, 218, 0.3),
+    15px 15px rgba(155, 175, 218, 0.2), 20px 20px rgba(155, 175, 218, 0.1),
+    25px 25px rgba(155, 175, 218, 0.05);
+}
