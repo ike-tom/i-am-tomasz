@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'PacFont';
-  src: local('PacFont'), url('../../fonts/PAC-FONT.ttf') format('truetype');
+  src: local('PacFont'), url('../../fonts/pacfont.ttf') format('truetype');
   font-display: swap;
 }
 
