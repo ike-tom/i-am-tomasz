@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'PacFont';
+  src: url('../../fonts/PAC-FONT.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Press Start';
+  src: url('../../fonts/PressStart.ttf') format('truetype');
+  font-display: swap;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #f6eb14;
+}
+
+@keyframes pulsation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
