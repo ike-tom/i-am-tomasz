@@ -75,8 +75,9 @@ const Icon = styled(FontAwesomeIcon)`
 
 const ContactOption = (props) => (
   <NavigationItem>
-    <ExternalSiteLink href={props.href} target="_blank" rel="noreferrer"></ExternalSiteLink>
-    <Icon icon={props.icon} />
+    <ExternalSiteLink href={props.href} target="_blank" rel="noreferrer">
+      <Icon icon={props.icon} />
+    </ExternalSiteLink>
   </NavigationItem>
 );
 
@@ -88,7 +89,9 @@ const ContactPage = () => {
         <ContactDescription>PLEASE CONTACT ME AT</ContactDescription>
         <Navigation>
           <NavigationList>
-            <ContactOption href="https://twitter.com/gatsbyjs" icon={faEnvelope}></ContactOption>
+            <ContactOption
+              href="mailto:tomasz.ikert.frontend@gmail.com"
+              icon={faEnvelope}></ContactOption>
             <ContactOption href="https://github.com/ike-tom" icon={faGithub}></ContactOption>
             <ContactOption
               href="https://www.linkedin.com/in/tomaszikert/"
@@ -104,8 +107,8 @@ const ContactPage = () => {
 
 ContactOption.propTypes = {
   href: PropTypes.string.isRequired,
-  icon: PropTypes.object.isRequired,
-  size: PropTypes.string.isRequired
+  icon: PropTypes.object.isRequired
+  // size: PropTypes.string.isRequired
 };
 
 export default ContactPage;
