@@ -28,11 +28,8 @@ const ContactDescription = styled.p`
 `;
 
 const Navigation = styled.nav`
-  margin: 0 22%;
-  padding-bottom: 7rem;
-  @media (max-width: 768px) {
-    margin: 0 5%;
-  }
+  margin: 0 5%;
+  padding: 3rem 0 3.5rem 0;
 `;
 
 const NavigationList = styled.ul`
@@ -59,9 +56,10 @@ const ReturnToMainPage = styled(Link)`
   height: 15%;
   margin-left: 6%;
   text-align: left;
-  padding-bottom: 5%;
+  margin-bottom: 5%;
   flex-grow: 0;
-
+  display: block;
+  width: fit-content;
   &:hover {
     animation: pulsation 0.7s infinite both linear;
   }
@@ -83,7 +81,7 @@ const ContactOption = (props) => (
 
 const ContactPage = () => {
   return (
-    <Layout title="Contact Page" metaDescription="">
+    <Layout title="Contact Me" metaDescription="">
       <ContactMainPage>
         <ContactHeader>GET IN TOUCH</ContactHeader>
         <ContactDescription>PLEASE CONTACT ME AT</ContactDescription>

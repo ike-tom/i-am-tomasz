@@ -1,53 +1,57 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
+import Layout from '../components/Layout/layout';
+import styled from 'styled-components';
 
-// styles
-const pageStyles = {
-  color: '#232129',
-  padding: '96px',
-  fontFamily: '-apple-system, Roboto, sans-serif, serif'
-};
 const headingStyles = {
   marginTop: 0,
   marginBottom: 64,
   maxWidth: 320
 };
 
-const paragraphStyles = {
-  marginBottom: 48
-};
-const codeStyles = {
-  color: '#8A6534',
-  padding: 4,
-  backgroundColor: '#FFF4DB',
-  fontSize: '1.25rem',
-  borderRadius: 4
-};
+const ErrorMainPage = styled.main`
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start', sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+`;
 
-// markup
+const ReturnToMainPage = styled(Link)`
+  text-decoration: none;
+  color: #f6eb14;
+  height: 15%;
+  text-align: center;
+  margin-bottom: 5%;
+
+  width: fit-content;
+  &:hover {
+    animation: pulsation 0.7s infinite both linear;
+  }
+`;
+
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{' '}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{' '}
-        we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === 'development' ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
+    <Layout
+      title="404 Page - Houston, we have a problem"
+      metaDescription="Error Page for iamtomasz. Something went wrong.">
+      <ErrorMainPage>
+        <title>Houston, we have a problem</title>
+        <h1 style={headingStyles}>
+          Ooops...
+          <br />
+          Something went wrong
+        </h1>
+        <ReturnToMainPage to="/">BACK</ReturnToMainPage>
+      </ErrorMainPage>
+    </Layout>
   );
 };
 

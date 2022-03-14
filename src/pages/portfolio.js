@@ -15,14 +15,25 @@ const PortfolioMainPage = styled.main`
   text-align: center;
 `;
 
+const PortfolioHeader = styled.h1`
+  margin: 0;
+  font-size: 3rem;
+  padding-top: 3rem;
+  @media (max-width: 500px) {
+    font-size: 2rem;
+  }
+`;
+
 const ReturnToMainPage = styled(Link)`
   text-decoration: none;
   color: #f6eb14;
   height: 15%;
   margin-left: 6%;
   text-align: left;
-  padding-bottom: 5%;
+  margin-bottom: 5%;
   flex-grow: 0;
+  display: block;
+  width: fit-content;
   &:hover {
     animation: pulsation 0.7s infinite both linear;
   }
@@ -52,9 +63,9 @@ const ExternalLinkToProject = styled.a``;
 
 const PortfolioPage = () => {
   return (
-    <Layout title="Portfolio" metaDescription="">
+    <Layout title="My Portfolio" metaDescription="">
       <PortfolioMainPage>
-        <h1>PORTFOLIO</h1>
+        <PortfolioHeader>PORTFOLIO</PortfolioHeader>
         <ProjectsGalleryWrapper>
           <ProjectWrapper>
             <div>
@@ -87,7 +98,10 @@ const PortfolioPage = () => {
           </ProjectWrapper>
           <ProjectWrapper>
             <div>
-              <ExternalLinkToProject href="#" target="_blank" rel="noreferrer">
+              <ExternalLinkToProject
+                href="https://github.com/ike-tom/oj-mat-api"
+                target="_blank"
+                rel="noreferrer">
                 <StaticImage
                   className="ojMatApiWrapper imageWrapper"
                   src="../assets/images/bicyclepixel.webp"
@@ -98,7 +112,10 @@ const PortfolioPage = () => {
           </ProjectWrapper>
           <ProjectWrapper>
             <div>
-              <ExternalLinkToProject href="#" target="_blank" rel="noreferrer">
+              <ExternalLinkToProject
+                href="https://github.com/ike-tom/rock-paper-scissors-lizard-spock"
+                target="_blank"
+                rel="noreferrer">
                 <StaticImage
                   className="bigBangTheoryWrapper imageWrapper"
                   src="../assets/images/bbtpixel.webp"
@@ -109,7 +126,10 @@ const PortfolioPage = () => {
           </ProjectWrapper>
           <ProjectWrapper>
             <div>
-              <ExternalLinkToProject href="#" target="_blank" rel="noreferrer">
+              <ExternalLinkToProject
+                href="https://github.com/ike-tom/IP-address-tracker"
+                target="_blank"
+                rel="noreferrer">
                 <StaticImage
                   className="ipTrackerWrapper imageWrapper"
                   src="../assets/images/detectivepixel.webp"

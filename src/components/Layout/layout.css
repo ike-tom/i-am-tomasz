@@ -16,6 +16,8 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: #f6eb14;
+  font-family: 'Press Start', sans-serif;
+  background-color: black;
 }
 
 @keyframes pulsation {

@@ -8,11 +8,7 @@ import '../styles/imagestyles.css';
 const IndexMainPage = styled.main`
   min-width: 100vw;
   min-height: 100vh;
-  background-color: black;
-  margin: 0;
-  padding: 0;
   font-family: 'Press Start', sans-serif;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,7 +53,7 @@ const Mode = (props) => (
 
 const IndexPage = () => {
   return (
-    <Layout title="Index Page" metaDescription="">
+    <Layout title="I am Tomasz" metaDescription="">
       <IndexMainPage>
         <header>
           <HeaderTitle>
