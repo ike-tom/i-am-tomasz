@@ -14,14 +14,14 @@ const ContactMainPage = styled.main`
   font-family: 'Press Start', sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
 `;
 
 const ContactHeader = styled.h1`
   margin: 0;
   font-size: 3rem;
-  padding-top: 2rem;
+  padding-top: 3rem;
 `;
 const ContactDescription = styled.p`
   font-size: 1.1rem;

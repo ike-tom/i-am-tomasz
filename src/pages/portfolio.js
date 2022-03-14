@@ -120,7 +120,10 @@ const PortfolioPage = () => {
           </ProjectWrapper>
           <ProjectWrapper>
             <div>
-              <ExternalLinkToProject href="#" target="_blank" rel="noreferrer">
+              <ExternalLinkToProject
+                href="https://github.com/ike-tom/space-tourism-multi-page-website"
+                target="_blank"
+                rel="noreferrer">
                 <StaticImage
                   className="spaceTourismWebsiteWrapper imageWrapper"
                   src="../assets/images/astronautpixel.webp"
