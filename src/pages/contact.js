@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../components/Layout/layout';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,20 +8,18 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const ContactMainPage = styled.main`
-  min-width: 100vw;
-  min-height: 100vh;
-  background-color: black;
-  font-family: 'Press Start', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-width: 100vw;
+  min-height: 100vh;
   text-align: center;
 `;
 
 const ContactHeader = styled.h1`
   margin: 0;
-  font-size: 3rem;
   padding-top: 3rem;
+  font-size: 3rem;
 `;
 const ContactDescription = styled.p`
   font-size: 1.1rem;
@@ -33,11 +31,11 @@ const Navigation = styled.nav`
 `;
 
 const NavigationList = styled.ul`
-  padding: 0;
   display: flex;
   align-content: center;
   align-items: center;
   justify-content: space-around;
+  padding: 0;
 `;
 
 const NavigationItem = styled.li`
@@ -51,23 +49,22 @@ const ExternalSiteLink = styled.a`
   color: #f6eb14;
 `;
 const ReturnToMainPage = styled(Link)`
-  text-decoration: none;
-  color: #f6eb14;
   height: 15%;
-  margin-left: 6%;
-  text-align: left;
-  margin-bottom: 5%;
-  flex-grow: 0;
-  display: block;
   width: fit-content;
+  margin-left: 6%;
+  margin-bottom: 5%;
+  color: #f6eb14;
+  text-align: left;
+  text-decoration: none;
+  flex-grow: 0;
   &:hover {
     animation: pulsation 0.7s infinite both linear;
   }
 `;
 const Icon = styled(FontAwesomeIcon)`
-  font-size: 160px;
-  @media (max-width: 768px) {
-    font-size: 80px;
+  font-size: 80px;
+  @media only screen and (min-device-width: 768px) {
+    font-size: 160px;
   }
 `;
 
@@ -81,7 +78,7 @@ const ContactOption = (props) => (
 
 const ContactPage = () => {
   return (
-    <Layout title="Contact Me" metaDescription="">
+    <Layout title="Contact Me" metaDescription="Here's more info on how to contact me...">
       <ContactMainPage>
         <ContactHeader>GET IN TOUCH</ContactHeader>
         <ContactDescription>PLEASE CONTACT ME AT</ContactDescription>
@@ -96,7 +93,6 @@ const ContactPage = () => {
               icon={faLinkedin}></ContactOption>
           </NavigationList>
         </Navigation>
-
         <ReturnToMainPage to="/">BACK</ReturnToMainPage>
       </ContactMainPage>
     </Layout>
@@ -106,7 +102,6 @@ const ContactPage = () => {
 ContactOption.propTypes = {
   href: PropTypes.string.isRequired,
   icon: PropTypes.object.isRequired
-  // size: PropTypes.string.isRequired
 };
 
 export default ContactPage;

@@ -1,78 +1,82 @@
-import * as React from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../components/Layout/layout';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 
 const AboutMainPage = styled.main`
-  min-width: 100vw;
-  height: 100vh;
-  min-height: 100vh;
   display: grid;
-  grid-template-columns: 6% repeat(2, 1fr) repeat(2, 1.5fr);
-  grid-template-rows: 1fr 3fr 15%;
+  grid-template-rows: auto auto auto 10vh;
+  grid-template-columns: 5% 1fr 5%;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  @media (max-width: 768px) {
-    grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: 21.25vh 63.75vh 100vh 10vh;
-    height: auto;
+  min-width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  @media only screen and (min-device-width: 768px) {
+    grid-template-columns: 6% repeat(2, 1fr) repeat(2, 1.5fr);
+    grid-template-rows: 1fr 3fr 15%;
+    height: 100vh;
   }
 `;
 
 const AboutHeader = styled.h1`
   margin: 0;
-  font-size: 3rem;
   padding-top: 3rem;
-  grid-area: 1 / 2 / 2 / 4;
-  @media (max-width: 768px) {
-    grid-area: 1 / 2 / 2 / 3;
+  font-size: 2.4rem;
+  grid-area: 1 / 2 / 2 / 3;
+  @media only screen and (min-device-width: 768px) {
+    grid-area: 1 / 2 / 2 / 4;
+  }
+  @media only screen and (min-device-width: 1024px) {
+    font-size: 3rem;
   }
 `;
 
 const AboutDescription = styled.p`
   margin: 0;
-  font-size: 1.1rem;
   padding-top: 1rem;
-  @media (max-width: 768px) {
-    font-size: 1rem;
+  font-size: 1rem;
+  @media only screen and (min-device-width: 768px) {
+    padding-top: 2rem;
+    font-size: 1.1rem;
   }
 `;
 
 const AboutDescriptionContainer = styled.div`
   padding-bottom: 1.5rem;
-  grid-area: 2 / 2 / 3 / 4;
   align-self: center;
-  @media (max-width: 768px) {
-    grid-area: 2 / 2 / 3 / 3;
+  grid-area: 2 / 2 / 3 / 3;
+  @media only screen and (min-device-width: 768px) {
+    grid-area: 2 / 2 / 3 / 4;
   }
 `;
 
 const AboutPhotoContainer = styled.div`
-  grid-area: 1 / 4 / 4 / 6;
-  @media (max-width: 768px) {
-    grid-area: 3 / 1 / 4 / 4;
+  grid-area: 3 / 1 / 4 / 4;
+  @media only screen and (min-device-width: 768px) {
+    grid-area: 1 / 4 / 4 / 6;
+  }
+`;
+
+const ReturnToMainPage = styled(Link)`
+  width: fit-content;
+  color: #f6eb14;
+  text-decoration: none;
+  grid-area: 4 / 2 / 5 / 3;
+  align-self: center;
+  &:hover {
+    animation: pulsation 0.7s infinite both linear;
+  }
+  @media only screen and (min-device-width: 768px) {
+    grid-area: 3 / 2 / 4 / 3;
+    align-self: top;
   }
 `;
 
 const photo = {
-  height: '100%',
-  objectFit: 'contain'
+  height: '100%'
 };
-
-const ReturnToMainPage = styled(Link)`
-  text-decoration: none;
-  color: #f6eb14;
-  grid-area: 3 / 2 / 4 / 3;
-  width: fit-content;
-  &:hover {
-    animation: pulsation 0.7s infinite both linear;
-  }
-  @media (max-width: 768px) {
-    grid-area: 4 / 2 / 5 / 3;
-    padding-top: 1rem;
-  }
-`;
 
 const AboutPage = () => {
   return (

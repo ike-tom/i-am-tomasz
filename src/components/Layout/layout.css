@@ -1,13 +1,19 @@
 @font-face {
   font-family: 'PacFont';
-  src: local('PacFont'), url('../../fonts/pacfont.woff') format('woff');
-  font-display: swap;
+  src: url('../../assets/fonts/PacFont.woff2') format('woff2'),
+      url('../../assets/fonts/PacFont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
 
 @font-face {
   font-family: 'Press Start';
-  src: local('Press Start'), url('../../fonts/PressStart.woff') format('woff');
-  font-display: swap;
+  src: url('../../assets/fonts/PressStart2P-Regular.woff2') format('woff2'),
+      url('../../assets/fonts/PressStart2P-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
 
 html,
@@ -15,8 +21,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #f6eb14;
   font-family: 'Press Start', sans-serif;
+  color: #f6eb14;
   background-color: black;
 }
 

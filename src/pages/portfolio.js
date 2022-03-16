@@ -1,159 +1,134 @@
-import * as React from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../components/Layout/layout';
 import styled from 'styled-components';
 import { StaticImage } from 'gatsby-plugin-image';
+import '../styles/imagestyles.css';
 
 const PortfolioMainPage = styled.main`
-  min-width: 100vw;
-  min-height: 100vh;
-  background-color: black;
-  font-family: 'Press Start', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
+  min-width: 100vw;
+  min-height: 100vh;
 `;
 
 const PortfolioHeader = styled.h1`
   margin: 0;
-  font-size: 3rem;
   padding-top: 3rem;
-  @media (max-width: 500px) {
-    font-size: 2rem;
+  font-size: 2rem;
+  @media only screen and (min-device-width: 500px) {
+    font-size: 3rem;
   }
 `;
 
 const ReturnToMainPage = styled(Link)`
-  text-decoration: none;
-  color: #f6eb14;
-  height: 15%;
-  margin-left: 6%;
-  text-align: left;
-  margin-bottom: 5%;
-  flex-grow: 0;
   display: block;
+  height: 15%;
   width: fit-content;
+  margin-left: 6%;
+  margin-bottom: 5%;
+  color: #f6eb14;
+  text-decoration: none;
+  text-align: left;
+  flex-grow: 0;
   &:hover {
     animation: pulsation 0.7s infinite both linear;
   }
 `;
 const ProjectsGalleryWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
   max-width: 60rem;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  flex-direction: row;
-  flex-wrap: wrap;
-  perspective: 1000px;
-  justify-content: center;
 `;
 const ProjectWrapper = styled.div`
-  width: 30%;
-  padding: 1rem;
+  width: 70%;
   max-height: 360px;
-  @media (max-width: 768px) {
-    width: 70%;
+  padding: 1rem;
+  @media only screen and (min-device-width: 768px) {
+    width: 30%;
   }
 `;
-const ExternalLinkToProject = styled.a``;
 
 const PortfolioPage = () => {
   return (
-    <Layout title="My Portfolio" metaDescription="">
+    <Layout title="My Portfolio" metaDescription="Examples of my Frontend projects">
       <PortfolioMainPage>
         <PortfolioHeader>PORTFOLIO</PortfolioHeader>
         <ProjectsGalleryWrapper>
           <ProjectWrapper>
-            <div>
-              <ExternalLinkToProject
-                href="https://github.com/team-prstmw/StarWarsQuiz"
-                target="_blank"
-                rel="noreferrer">
-                <StaticImage
-                  className="starWarsPhotoWrapper imageWrapper"
-                  imgClassName="starWarsPhoto"
-                  src="../assets/images/swpixel.webp"
-                  alt="Star Wars Quiz"
-                />
-              </ExternalLinkToProject>
-            </div>
+            <a href="https://github.com/team-prstmw/StarWarsQuiz" target="_blank" rel="noreferrer">
+              <StaticImage
+                className="starWarsPhotoWrapper imageWrapper"
+                src="../assets/images/swpixel.webp"
+                alt="Star Wars Quiz"
+              />
+            </a>
           </ProjectWrapper>
           <ProjectWrapper>
-            <div>
-              <ExternalLinkToProject
-                href="https://github.com/team-prstmw/HousesForSaleSearcher"
-                target="_blank"
-                rel="noreferrer">
-                <StaticImage
-                  className="housesForSaleWrapper imageWrapper"
-                  src="../assets/images/housepixel.webp"
-                  alt="Houses for Sale Searcher"
-                />
-              </ExternalLinkToProject>
-            </div>
+            <a
+              href="https://github.com/team-prstmw/HousesForSaleSearcher"
+              target="_blank"
+              rel="noreferrer">
+              <StaticImage
+                className="housesForSaleWrapper imageWrapper"
+                src="../assets/images/housepixel.webp"
+                alt="Houses for Sale Searcher"
+              />
+            </a>
           </ProjectWrapper>
           <ProjectWrapper>
-            <div>
-              <ExternalLinkToProject
-                href="https://github.com/ike-tom/oj-mat-api"
-                target="_blank"
-                rel="noreferrer">
-                <StaticImage
-                  className="ojMatApiWrapper imageWrapper"
-                  src="../assets/images/bicyclepixel.webp"
-                  alt="OjMatApi - Father Matthew API"
-                />
-              </ExternalLinkToProject>
-            </div>
+            <a href="https://github.com/ike-tom/oj-mat-api" target="_blank" rel="noreferrer">
+              <StaticImage
+                className="ojMatApiWrapper imageWrapper"
+                src="../assets/images/bicyclepixel.webp"
+                alt="OjMatApi - Father Matthew API"
+              />
+            </a>
           </ProjectWrapper>
           <ProjectWrapper>
-            <div>
-              <ExternalLinkToProject
-                href="https://github.com/ike-tom/rock-paper-scissors-lizard-spock"
-                target="_blank"
-                rel="noreferrer">
-                <StaticImage
-                  className="bigBangTheoryWrapper imageWrapper"
-                  src="../assets/images/bbtpixel.webp"
-                  alt="Rock, paper, scissors, lizard, spock game"
-                />
-              </ExternalLinkToProject>
-            </div>
+            <a
+              href="https://github.com/ike-tom/rock-paper-scissors-lizard-spock"
+              target="_blank"
+              rel="noreferrer">
+              <StaticImage
+                className="bigBangTheoryWrapper imageWrapper"
+                src="../assets/images/bbtpixel.webp"
+                alt="Rock, paper, scissors, lizard, spock game"
+              />
+            </a>
           </ProjectWrapper>
           <ProjectWrapper>
-            <div>
-              <ExternalLinkToProject
-                href="https://github.com/ike-tom/IP-address-tracker"
-                target="_blank"
-                rel="noreferrer">
-                <StaticImage
-                  className="ipTrackerWrapper imageWrapper"
-                  src="../assets/images/detectivepixel.webp"
-                  alt="IP Address Tracker"
-                />
-              </ExternalLinkToProject>
-            </div>
+            <a
+              href="https://github.com/ike-tom/IP-address-tracker"
+              target="_blank"
+              rel="noreferrer">
+              <StaticImage
+                className="ipTrackerWrapper imageWrapper"
+                src="../assets/images/detectivepixel.webp"
+                alt="IP Address Tracker"
+              />
+            </a>
           </ProjectWrapper>
           <ProjectWrapper>
-            <div>
-              <ExternalLinkToProject
-                href="https://github.com/ike-tom/space-tourism-multi-page-website"
-                target="_blank"
-                rel="noreferrer">
-                <StaticImage
-                  className="spaceTourismWebsiteWrapper imageWrapper"
-                  src="../assets/images/astronautpixel.webp"
-                  alt="Space tourism website"
-                />
-              </ExternalLinkToProject>
-            </div>
+            <a
+              href="https://github.com/ike-tom/space-tourism-multi-page-website"
+              target="_blank"
+              rel="noreferrer">
+              <StaticImage
+                className="spaceTourismWebsiteWrapper imageWrapper"
+                src="../assets/images/astronautpixel.webp"
+                alt="Space tourism website"
+              />
+            </a>
           </ProjectWrapper>
         </ProjectsGalleryWrapper>
-
         <ReturnToMainPage to="/">BACK</ReturnToMainPage>
       </PortfolioMainPage>
     </Layout>

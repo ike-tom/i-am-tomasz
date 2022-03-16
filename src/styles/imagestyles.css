@@ -1,9 +1,9 @@
 .imageWrapper {
   max-height: 160px;
-  overflow: hidden;
   top: 0px;
   left: 0px;
   transition: top 0.3s, left 0.3s, box-shadow 0.3s;
+  overflow: hidden;
 }
 
 .imageWrapper:hover {
