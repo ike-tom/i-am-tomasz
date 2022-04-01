@@ -5,7 +5,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+
+interface ContactOptionProps {
+  href: string;
+  icon: IconDefinition;
+}
 
 const ContactMainPage = styled.main`
   display: flex;
@@ -68,7 +73,7 @@ const Icon = styled(FontAwesomeIcon)`
   }
 `;
 
-const ContactOption = (props) => (
+const ContactOption = (props: ContactOptionProps) => (
   <NavigationItem>
     <ExternalSiteLink href={props.href} target="_blank" rel="noreferrer">
       <Icon icon={props.icon} />
@@ -97,11 +102,6 @@ const ContactPage = () => {
       </ContactMainPage>
     </Layout>
   );
-};
-
-ContactOption.propTypes = {
-  href: PropTypes.string.isRequired,
-  icon: PropTypes.object.isRequired
 };
 
 export default ContactPage;

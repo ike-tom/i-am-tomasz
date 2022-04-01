@@ -4,7 +4,13 @@ import { Helmet } from 'react-helmet';
 import PacFont from '../../assets/fonts/PacFont.woff2';
 import PressStart from '../../assets/fonts/PressStart2P-Regular.woff2';
 
-export default function Layout({ title, children, metaDescription }) {
+interface LayoutProps {
+  title: string;
+  children?: React.ReactNode;
+  metaDescription: string;
+}
+
+export default function Layout({ title, children, metaDescription }: LayoutProps) {
   return (
     <>
       <Helmet

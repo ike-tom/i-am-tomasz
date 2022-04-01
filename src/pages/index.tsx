@@ -2,8 +2,11 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../components/Layout/layout';
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 
+interface ModeProps {
+  page: string;
+  pageName: string;
+}
 const IndexMainPage = styled.main`
   display: flex;
   flex-direction: column;
@@ -44,7 +47,7 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const Mode = (props) => (
+const Mode = (props: ModeProps) => (
   <NavigationItem>
     <StyledLink to={props.page}>{props.pageName}</StyledLink>
   </NavigationItem>
@@ -76,11 +79,6 @@ const IndexPage = () => {
       </IndexMainPage>
     </Layout>
   );
-};
-
-Mode.propTypes = {
-  page: PropTypes.string.isRequired,
-  pageName: PropTypes.string.isRequired
 };
 
 export default IndexPage;
