@@ -20,9 +20,12 @@ const IndexMainPage = styled.main`
 const HeaderTitle = styled.h1`
   margin: 0;
   padding-top: 2rem;
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: 'PacFont', sans-serif;
   line-height: 135%;
+  @media only screen and (min-device-width: 768px) {
+    font-size: 4rem;
+  }
 `;
 const Paragraph = styled.p`
   font-size: 0.8rem;

@@ -84,7 +84,7 @@ const PortfolioPage = () => {
             </a>
           </ProjectWrapper>
           <ProjectWrapper>
-            <a href="https://github.com/ike-tom/oj-mat-api" target="_blank" rel="noreferrer">
+            <a href="https://github.com/topics/oj-mat-api" target="_blank" rel="noreferrer">
               <StaticImage
                 className="ojMatApiWrapper imageWrapper"
                 src="../assets/images/bicyclepixel.webp"
@@ -92,7 +92,7 @@ const PortfolioPage = () => {
               />
             </a>
           </ProjectWrapper>
-          <ProjectWrapper>
+          {/* <ProjectWrapper>
             <a
               href="https://github.com/ike-tom/rock-paper-scissors-lizard-spock"
               target="_blank"
@@ -103,8 +103,8 @@ const PortfolioPage = () => {
                 alt="Rock, paper, scissors, lizard, spock game"
               />
             </a>
-          </ProjectWrapper>
-          <ProjectWrapper>
+          </ProjectWrapper> */}
+          {/* <ProjectWrapper>
             <a
               href="https://github.com/ike-tom/IP-address-tracker"
               target="_blank"
@@ -115,8 +115,8 @@ const PortfolioPage = () => {
                 alt="IP Address Tracker"
               />
             </a>
-          </ProjectWrapper>
-          <ProjectWrapper>
+          </ProjectWrapper> */}
+          {/* <ProjectWrapper>
             <a
               href="https://github.com/ike-tom/space-tourism-multi-page-website"
               target="_blank"
@@ -127,7 +127,7 @@ const PortfolioPage = () => {
                 alt="Space tourism website"
               />
             </a>
-          </ProjectWrapper>
+          </ProjectWrapper> */}
         </ProjectsGalleryWrapper>
         <ReturnToMainPage to="/">BACK</ReturnToMainPage>
       </PortfolioMainPage>

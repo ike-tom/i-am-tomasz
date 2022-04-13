@@ -87,14 +87,14 @@ const AboutPage = () => {
         <AboutHeader>WHO AM I</AboutHeader>
         <AboutDescriptionContainer>
           <AboutDescription>
-            Hello, my name is Tomasz Ikert. I am hardworking, conscientious, and never give up.
+            Lazy, ineffective, and chaotic... - certainly not about me.
           </AboutDescription>
           <AboutDescription>
-            I love trying new things, so I started learning programming in June 2020. I have a
-            scientific mind, so I got bitten by the bug.
+            My name is Tomasz Ikert. I am creative, communicative, and accurate. I love learning new
+            things, so that's why I started my programming journey.
           </AboutDescription>
           <AboutDescription>
-            I know React, JavaScript, CSS (Less), HTML, Jira, Trello, Asana, RWD, BEM.
+            "Nobody who ever gave his best regretted it" - that's my way of life.
           </AboutDescription>
           <AboutDescription>
             I read biographies, watch the NFL and motorsports, and ride a bike in my spare time.
