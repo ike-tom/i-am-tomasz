@@ -104,18 +104,18 @@ const PortfolioPage = () => {
               />
             </a>
           </ProjectWrapper> */}
-          {/* <ProjectWrapper>
+          <ProjectWrapper>
             <a
-              href="https://github.com/ike-tom/IP-address-tracker"
+              href="https://github.com/ike-tom/fake-news-network-FE"
               target="_blank"
               rel="noreferrer">
               <StaticImage
-                className="ipTrackerWrapper imageWrapper"
-                src="../assets/images/detectivepixel.webp"
-                alt="IP Address Tracker"
+                className="fakeNewsNetworkWrapper imageWrapper"
+                src="../assets/images/fakenewsnetwork.webp"
+                alt="Fake News Network - quiz game"
               />
             </a>
-          </ProjectWrapper> */}
+          </ProjectWrapper>
           {/* <ProjectWrapper>
             <a
               href="https://github.com/ike-tom/space-tourism-multi-page-website"

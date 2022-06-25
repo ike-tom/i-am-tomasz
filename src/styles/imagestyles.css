@@ -26,10 +26,10 @@
     15px 15px rgba(220, 216, 215, 0.2), 20px 20px rgba(220, 216, 215, 0.1),
     25px 25px rgba(220, 216, 215, 0.05);
 }
-.ipTrackerWrapper:hover {
-  box-shadow: 5px 5px rgba(0, 122, 135, 0.4), 10px 10px rgba(0, 122, 135, 0.3),
-    15px 15px rgba(0, 122, 135, 0.2), 20px 20px rgba(0, 122, 135, 0.1),
-    25px 25px rgba(0, 122, 135, 0.05);
+.fakeNewsNetworkWrapper:hover {
+  box-shadow: 5px 5px rgba(255, 255, 255, 0.4), 10px 10px rgba(255, 255, 255, 0.3),
+    15px 15px rgba(255, 255, 255, 0.2), 20px 20px rgba(255, 255, 255, 0.1),
+    25px 25px rgba(255, 255, 255, 0.05);
 }
 .spaceTourismWebsiteWrapper:hover {
   box-shadow: 5px 5px rgba(91, 95, 96, 0.4), 10px 10px rgba(91, 95, 96, 0.3),
