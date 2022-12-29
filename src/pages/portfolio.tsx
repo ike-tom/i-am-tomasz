@@ -73,13 +73,13 @@ const PortfolioPage = () => {
           </ProjectWrapper>
           <ProjectWrapper>
             <a
-              href="https://github.com/team-prstmw/HousesForSaleSearcher"
+              href="https://github.com/ike-tom/space-tourism"
               target="_blank"
               rel="noreferrer">
               <StaticImage
-                className="housesForSaleWrapper imageWrapper"
-                src="../assets/images/housepixel.webp"
-                alt="Houses for Sale Searcher"
+                className="spaceTourismWebsiteWrapper imageWrapper"
+                src="../assets/images/astronautpixel.webp"
+                alt="Space tourism website"
               />
             </a>
           </ProjectWrapper>
@@ -115,19 +115,7 @@ const PortfolioPage = () => {
                 alt="Fake News Network - quiz game"
               />
             </a>
-          </ProjectWrapper>
-          {/* <ProjectWrapper>
-            <a
-              href="https://github.com/ike-tom/space-tourism-multi-page-website"
-              target="_blank"
-              rel="noreferrer">
-              <StaticImage
-                className="spaceTourismWebsiteWrapper imageWrapper"
-                src="../assets/images/astronautpixel.webp"
-                alt="Space tourism website"
-              />
-            </a>
-          </ProjectWrapper> */}
+          </ProjectWrapper>          
         </ProjectsGalleryWrapper>
         <ReturnToMainPage to="/">BACK</ReturnToMainPage>
       </PortfolioMainPage>
